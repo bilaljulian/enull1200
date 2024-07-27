@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNull - Rare Items Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1; /* Allows the content to grow and take up available space */
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        footer {
+            background-color: blue; /* Blue background for footer */
+            color: white;
+            text-align: center;
+            width: 100%;
+            position: fixed; /* Fixed positioning for footer */
+            bottom: 0;
+            left: 0;
+            height: 700px; /* Fixed height for footer */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 0;
+            box-sizing: border-box; /* Ensure padding is included in the height */
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        footer li {
+            margin: 5px 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-text {
+            font-size: 14px;
+        }
+        .trademark {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main content section has been removed -->
+    </div>
+    <footer>
+        <ul>
+            <li><a href="https://enull1000.vercel.app/">About eNull</a></li>
+            <li><a href="https://enull1000.vercel.app/">Contact eNull</a></li>
+            <li><a href="https://enull1000.vercel.app/">Help</a></li>
+            <li><a href="https://enull1000.vercel.app/">Safety Center</a></li>
+            <li><a href="https://enull1000.vercel.app/">Safety Guidelines</a></li>
+            <li><a href="https://enull1000.vercel.app/">Common Scams</a></li>
+            <li><a href="https://enull1000.vercel.app/">Do Not Sell My Information</a></li>
+            <li><a href="https://enull1000.vercel.app/">Cookie Policy</a></li>
+            <li><a href="https://enull1000.vercel.app/">Terms of Use</a></li>
+            <li><a href="https://enull1000.vercel.app/">Fundraising</a></li>
+            <li><a href="https://enull1000.vercel.app/">Advertising</a></li>
+        </ul>
+        <div class="footer-text">
+            &copy; <span id="year"></span> eNull. All rights reserved. Copyrighted.
+        </div>
+        <div class="trademark">
+            eNull™ is a trademark of eNull Inc. All other trademarks and brands are property of their respective owners.
+        </div>
+    </footer>
+
+    <script>
+        // Update the copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
